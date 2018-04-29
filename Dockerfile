@@ -16,6 +16,7 @@ RUN \
    stable" && \
   # user setting
   useradd -ms /bin/bash c9 && \
+  # set password
   echo "c9:c9" | chpasswd && \
   adduser c9 sudo && \
   mkdir $C9_HOME && mkdir $WORKSPACE && \
